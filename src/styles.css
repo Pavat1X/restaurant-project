@@ -15,7 +15,7 @@ button {
     background: none;
     font-weight: bold;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1rem;
     color: var(--tailwind-grey);
 }
 
@@ -26,7 +26,7 @@ button {
 }
 
 #home-logo-button {
-    font-size: medium;
+    font-size: 1.1rem;
     color: black
 }
 
@@ -40,7 +40,9 @@ span {
     align-items: center;
     gap: 10px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border-bottom: 10px solid var(--tailwind-gradRed);
+    border-top : 10px solid var(--tailwind-gradRed);
 }
 
 #hero-text {
@@ -53,13 +55,13 @@ span {
 
 #hero-text-main {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 4.5rem;
 }
 
 #hero-text-sub {
     margin-top: -10px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 #img-highlights {
@@ -67,13 +69,59 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+#highlight-text {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .food-card {
     display: flex;
     gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: top;
 }
 
-#charsiu-img {
+.food-img {
     width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+#siuyok-card {
+    margin-left: 30px;
+}
+
+#hofun-card {
+    margin-left: 30px;
+}
+
+#call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#action-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#contacts-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts-container > p {
+    font-size: 1.3rem;
 }
