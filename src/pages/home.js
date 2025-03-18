@@ -45,7 +45,7 @@ class foodCard {
 
     // methods
     
-    initCard = () => {
+    compileCard = () => {
         //building blocks
         const divObj = document.createElement('div');
         const imgContainer = document.createElement('img');
@@ -60,13 +60,36 @@ class foodCard {
         imgContainer.setAttribute('class', 'food-img');
         imgContainer.setAttribute('id', `${this.id}-img`);
 
-        divObj.appendChild(imgContainer);
+        divObj.appendChild(imgContainer, txtContainer);
 
         //todo: figure out how to efficiently set innerText as txtContainer's innerHTML
         //maybe separate into a new method or just do it outside of the object bounds
     }
 };
 
+function makeCard(name, imgSrc) {
+    const imgContainer = document.createElement('img');
+    const txtContainer = document.createElement('div');
+
+    divObj.setAttribute('class', 'food-card');
+    divObj.setAttribute('id', `${name}-card`);
+    
+    imgContainer.src = imgSrc;
+    imgContainer.setAttribute('class', 'food-img');
+    imgContainer.setAttribute('id', `${name}-img`);
+
+    const addHTML = (content) => imgContainer.innerHTML = content; 
+
+    const compileCard = () => {
+        const divObj = document.createElement('div');
+        divObj.appendChild(imgContainer, txtContainer);
+        return divObj;    
+    }
+    
+
+    return {compileCard, addHTML}
+
+}
 
 
 
