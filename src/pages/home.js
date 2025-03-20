@@ -34,7 +34,7 @@ function makeImg(imgSrc, imgName, accomText) {
     foodCard.appendChild(imgContainer);
     foodCard.appendChild(txtContainer);
 
-    return {foodCard};
+    return foodCard;
 
 }
 
@@ -42,9 +42,9 @@ const charSiu = makeImg(charsiu, 'charsiu', '<h4>Char Siu Pork</h4><p>Pork, hone
 const siuYok = makeImg(siuyok, 'siuyok', '<h4>Siu Yok</h4><p>Chinese-style pork with a satisfying crackle.To be enjoyed with mustard.</p>'); 
 const hoFun = makeImg(hofun, 'hofun', '<h4>Beef Ho Fun</h4><p>A Hong Kong diner classic. Stir fried noodles with beef slices.Highly aromatic with a charred wok aftertaste.</p>');   
 
-imgHighlights.appendChild(charSiu.foodCard);
-imgHighlights.appendChild(siuYok.foodCard);
-imgHighlights.appendChild(hoFun.foodCard);
+imgHighlights.appendChild(charSiu);
+imgHighlights.appendChild(siuYok);
+imgHighlights.appendChild(hoFun);
 
 
 //building up call to action section
