@@ -34,8 +34,7 @@ function makeImg(imgSrc, imgName, accomText) {
     foodCard.appendChild(imgContainer);
     foodCard.appendChild(txtContainer);
 
-    return foodCard;
-
+    return foodCard; 
 }
 
 const charSiu = makeImg(charsiu, 'charsiu', '<h4>Char Siu Pork</h4><p>Pork, honey roasted to perfection.Served over rice or with vegetables.</p>');
