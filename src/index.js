@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     main.appendChild(imgHighlights);    
     main.appendChild(callToAction);
     
-    const homeBtn = document.getElementById('home-btn');
-    const menuBtn = document.getElementById('menu-btn');    
-    const contactBtn = document.getElementById('contact-btn');
+    const homeBtn = document.getElementById('home-logo-button');
+    const menuBtn = document.getElementById('menu-button');    
+    const contactBtn = document.getElementById('contact-button');
 
     homeBtn.addEventListener('click', () => {
         main.innerHTML = '';
@@ -18,5 +18,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         main.appendChild(callToAction);
     });
 
+    menuBtn.addEventListener('click', () => {
+        main.innerHTML = '';
+    })
     
 });
